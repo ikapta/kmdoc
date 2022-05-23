@@ -7,7 +7,7 @@ A tiny WYSIWYG for markdown. Tech's: `Mantine` `Nextjs` `Markdoc`
   Kmd uses a fully declarative approach to composition and flow control, and deep combine with Mantine [Read more](https://mantine.dev/).
   
 ## Site
-[quick look](https://kmd-one.vercel.app)
+[quick look](https://kmdoc.vercel.app)
 
 ## Screen Shot
 
