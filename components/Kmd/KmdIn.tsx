@@ -9,7 +9,7 @@ const DefaultDocContent = `
   title: What is Kmd?
   ---
 
-  Kmd is a created by Mantine Nextjs Markdoc. Vercel created Kmd to power [our public docs](https://vercel.com/).
+  Kmd is a created by Mantine Nextjs Markdoc. Vercel created Kmd to power [our public docs](https://kmdoc.vercel.app/).
 
   ## How is KMD different?
   Kmd uses a fully declarative approach to composition and flow control, and deep combine with Mantine [Read more](https://mantine.dev/).

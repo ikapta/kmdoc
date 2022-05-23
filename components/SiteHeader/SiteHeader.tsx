@@ -1,7 +1,7 @@
 import React from 'react';
-import { createStyles, Header, Menu, Group, Center, Burger, Container } from '@mantine/core';
+import { createStyles, Header, Menu, Group, Center, Burger, Container, ActionIcon } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
-import { ChevronDown } from 'tabler-icons-react';
+import { ChevronDown, GitMerge } from 'tabler-icons-react';
 import { SunIcon } from '@modulz/radix-icons';
 import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle';
 
@@ -110,6 +110,20 @@ export function SiteHeader({ links }: HeaderSearchProps) {
           </Group>
 
           <Group>
+
+            <ActionIcon
+              color="indigo"
+              sx={(theme) => ({
+              backgroundColor:
+                theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+                color: theme.colorScheme === 'dark' ? theme.colors.indigo[4] : theme.colors.indigo[6],
+              })}
+              // eslint-disable-next-line no-restricted-globals
+              onClick={() => { location.href = 'https://github.com/ikapta/kmdoc'; }}
+            >
+              <GitMerge size={18} />
+            </ActionIcon>
+
             <ColorSchemeToggle />
 
             <Burger
