@@ -39,13 +39,12 @@ function Box({ c, p = {}, children, ...others /** Any component props */ }: {
   /** Component content */
   children: React.ReactNode
 }) {
-  // @ts-ignore
-  const MantineComponent = Mt[c];
+  const MantineComponent = (Mt as any)[c];
 
-  if (MantineComponent) {
+  if (MantineComponent && !(typeof MantineComponent === 'function')) {
     return <MantineComponent {...p} {...others}>{children}</MantineComponent>;
   }
-  return `[${c}]: Component not found!`;
+  return `[${c}]: Not support!`;
 }
 
 const ComponentsMap = {
